@@ -37,7 +37,7 @@ const Search: FC<SearchProps> = ({ title }) => {
         <div className="background-nav">
          <div className="navbar">
             <img src={logo} className="logo" alt="Logo" />
-            <a href="https://github.com/AgoraphobicClimber" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/AgoraphobicClimber/onlyForecasts" target="_blank" rel="noopener noreferrer">
             <img src={githublogo} className="gitlogo" alt="Git" /> 
             </a>
          </div>
