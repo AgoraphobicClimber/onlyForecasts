@@ -1,0 +1,61 @@
+.level .level-item {
+  margin-bottom: 50px !important;
+}
+
+.background-nav {
+  background-color: white;
+}
+
+.navbar-item {
+  height: 10em;
+  width: 10em;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+  height: 8em;
+  width: 40%;
+}
+
+.gitlogo {
+  height: 8em;
+  margin-left: 58em;
+}
+
+.hero-body {
+  background-color: white;
+  width: 100%;
+}
+
+.weathercont {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherconttwo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5em;
+}
+
+.weathericon {
+  padding-right: 5em;
+  margin-left: 0em;
+}
+
+.temp-min {
+  margin-top: 4em;
+}
+
+.temp-max {
+  margin-top: 3em;
+}
+
+.button.is-primary.is-fullwidth {
+  background-color: rgb(103, 103, 204);
+}
+
+.button.is-primary.is-fullwidth a:hover {
+  background-color: rgb(103, 103, 204);
+}
