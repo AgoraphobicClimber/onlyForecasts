@@ -33,19 +33,15 @@ const Search: FC<SearchProps> = ({ title }) => {
     }
 
     return (
-        <div className="hero is-light has-text-centered">
+    <div>
+         <a className="gitlogo" href="https://github.com/AgoraphobicClimber/onlyForecasts" target="_blank" rel="noopener noreferrer">
+            <img src={githublogo} className="gitlogo" alt="Git" /> 
+            </a>
+        <div className="hero has-text-centered">
         <div className="background-nav">
          <div className="navbar">
             <img src={logo} className="logo" alt="Logo" />
-            <a href="https://github.com/AgoraphobicClimber/onlyForecasts" target="_blank" rel="noopener noreferrer">
-            <img src={githublogo} className="gitlogo" alt="Git" /> 
-            </a>
-         </div>
-         </div>
-            <div className="hero-body">
-                <div className="container-search">
-                    <h1 className="title">{title}</h1>
-                    <form className="py-5" onSubmit={submitHandler}>
+            <form className="py-5" onSubmit={submitHandler}>
                         <input 
                         type="text"
                         className="input has-text-centered mb-2"
@@ -55,10 +51,10 @@ const Search: FC<SearchProps> = ({ title }) => {
                         onChange={changeHandler}
                         />
                     </form>
-                </div>
-                
-            </div>
+             </div>
+          </div>
         </div>
+    </div>
     );
 }
 

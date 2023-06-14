@@ -14,7 +14,7 @@ const Weather: FC<WeatherProps> = ({ data }) => {
     const celsius_max = (data.main.temp_max - 273.15).toFixed(2);
 
     return (
-    <div className="surround">
+    <div className="body">
       <section className="section">
         <div className="container">
             <h1 className="title has text-centered" style={{marginBottom: 50}}>{data.name} - {data.sys.country}</h1>
@@ -30,47 +30,47 @@ const Weather: FC<WeatherProps> = ({ data }) => {
                 <div className="temp">
                     <p className="heading">temp</p>
                     <div className="title">
-                        <p className="mb-2">{fahrenheit}<sup>&#8457;</sup></p>
-                        <p className="mb-2">{celsius}<sup>&#8451;</sup></p>
-                        <p className="mb-2">{data.main.temp}K</p>
+                        <p className="fmax">{fahrenheit}<sup>&#8457;</sup></p>
+                        <p className="fmax">{celsius}<sup>&#8451;</sup></p>
+                        <p className="fmax">{data.main.temp}K</p>
                     </div>
                 <div className="temp-min">
                     <div className="title">
                         <p className="heading">temp-min</p>
-                        <p className="mb-2">{fahrenheit_min}<sup>&#8457;</sup></p>
-                        <p className="mb-2">{celsius_min}<sup>&#8451;</sup></p>
-                        <p className="mb-2">{data.main.temp_min}K</p>
+                        <p className="fmax">{fahrenheit_min}<sup>&#8457;</sup></p>
+                        <p className="fmax">{celsius_min}<sup>&#8451;</sup></p>
+                        <p className="fmax">{data.main.temp_min}K</p>
                     </div>
                 </div>
+                <div className="temp-max">
+             <div className="title">
+                        <p className="heading">temp-max</p>
+                        <p className="fmax">{fahrenheit_max}<sup>&#8457;</sup></p>
+                        <p className="fmax">{celsius_max}<sup>&#8451;</sup></p>
+                        <p className="fmax">{data.main.temp_max}K</p>
+                    </div>
+            </div>
                 </div>
              </div>
             <div className="weatherconttwo">
              <div className="level-item has-text-centered">
                 <div>
                     <p className="heading">humidity</p>
-                    <p className="title">{data.main.humidity}</p>
+                    <p className="humidity">{data.main.humidity}</p>
                 </div>
              </div>
              <div className="level-item has-text-centered">
                 <div>
                     <p className="heading">pressure</p>
-                    <p className="title">{data.main.pressure}</p>
+                    <p className="pressure">{data.main.pressure}</p>
                 </div>
              </div>
              <div className="level-item has-text-centered">
                 <div>
                     <p className="heading">wind</p>
-                    <p className="title">{data.wind.speed} m/s</p>
+                    <p className="wind">{data.wind.speed} m/s</p>
                 </div>
              </div>
-            <div className="temp-max">
-             <div className="title">
-                        <p className="heading">temp-max</p>
-                        <p className="mb-2">{fahrenheit_max}<sup>&#8457;</sup></p>
-                        <p className="mb-2">{celsius_max}<sup>&#8451;</sup></p>
-                        <p className="mb-2">{data.main.temp_max}K</p>
-                    </div>
-            </div>
             </div>
          </div>
         </div>

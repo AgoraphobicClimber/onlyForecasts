@@ -1,14 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ html {
+  background-image: linear-gradient(skyblue, rgb(79, 79, 149));
+  display: flex;
+}
+
 .level .level-item {
   margin-bottom: 50px !important;
 }
 
 .background-nav {
-  background-color: white;
-}
-
-.navbar-item {
-  height: 10em;
-  width: 10em;
+  background-color: linear-gradient()
 }
 
 .logo {
@@ -16,34 +21,41 @@
   left: 0;
   height: 8em;
   width: 40%;
+  margin-right: 20px;
 }
 
 .gitlogo {
   height: 8em;
-  margin-left: 58em;
-}
-
-.hero-body {
-  background-color: white;
-  width: 100%;
+  width: 8em;
+  float: right;
 }
 
 .weathercont {
   display: flex;
   justify-content: center;
+  margin-left: 8em;
 }
 
 .weatherconttwo {
   display: flex;
   flex-direction: column;
   padding-left: 5em;
+  margin-top: 4em;
+  font-size: 2rem;
+}
+
+form.py-5 {
+  margin-right: 50em;
+}
+
+.input.has-text-centered.mb-2 {
+ margin-left: 8em;
 }
 
 .weathericon {
   padding-right: 5em;
   margin-left: 0em;
 }
-
 .temp-min {
   margin-top: 4em;
 }
@@ -58,4 +70,66 @@
 
 .button.is-primary.is-fullwidth a:hover {
   background-color: rgb(103, 103, 204);
+}
+
+a {
+  width: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .section {
+    width: 320px;
+  }
+
+  .weathercont {
+    width: 50%;
+  }
+
+  .weatherconttwo {
+      width: 12em;
+      padding: 0px;
+      margin-right: 1em;
+      margin-top: 4em;
+  }
+
+  .container {
+    width: 5%;
+  }
+
+
+  .logo {
+     width: 80%;
+     height: 10%;
+     margin-top: 1em;
+     font-size: 1px;
+  }
+
+  .fmax {
+    font-size: 50%;
+  }
+
+  .gitlogo {
+    width: 4em;
+    height: 4em;
+  }
+
+  .input.has-text-centered.mb-2 {
+    width: 12em;
+    margin-left: 4em;
+   }
+
+   .temp {
+    padding-right: 1em;
+   }
+
+   .temp-max {
+    width: 200%;
+    margin-left: -2em;
+   }
+   .weathericon {
+    padding: 0px;
+    padding-right: 1em;
+    margin-left: 8em;
+   }
 }
