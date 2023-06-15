@@ -89,8 +89,8 @@ a {
   .weatherconttwo {
       width: 12em;
       padding: 0px;
-      margin-right: 1em;
-      margin-top: 4em;
+      margin-right: 4em;
+      margin-top: 1em;
   }
 
   .container {
@@ -129,7 +129,13 @@ a {
    }
    .weathericon {
     padding: 0px;
-    padding-right: 1em;
-    margin-left: 8em;
+    padding-right: 0em;
+    margin-left: 0;
    }
+
+   .level-item.has-text-centered-2 {
+    padding-left: 1em;
+    padding-right: 1em;
+   }
+
 }

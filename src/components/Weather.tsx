@@ -26,7 +26,7 @@ const Weather: FC<WeatherProps> = ({ data }) => {
                     <p className="title"><img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}/></p>
                 </div>
              </div>
-             <div className="level-item has-text-centered">
+             <div className="level-item has-text-centered-2">
                 <div className="temp">
                     <p className="heading">temp</p>
                     <div className="title">
